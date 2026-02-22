@@ -11,7 +11,7 @@ export default function Footer() {
         fontSize: 12, color: 'var(--color-gray-700)',
         letterSpacing: '-0.01em',
       }}>
-        <p>© {new Date().getFullYear()} Hector Beaufrere</p>
+        <p>© {new Date().getFullYear()} Hector Beaufrère</p>
         <p>Fait avec passion (et quelques galères).</p>
       </div>
     </footer>

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 const links = [
   { label: 'À propos', href: '#about' },
-  { label: 'Projets', href: '#projects' },
+  { label: 'Expériences', href: '#experiences' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -50,7 +50,7 @@ export default function Nav() {
       style={S.nav(scrolled)}
     >
       <div style={S.inner}>
-        <a href="#" style={S.logo}>Hector Beaufrere</a>
+        <a href="#" style={S.logo}>Hector Beaufrère</a>
 
         <ul style={{ display: 'flex', gap: 32, listStyle: 'none', margin: 0, padding: 0 }}>
           {links.map((l) => (
@@ -65,7 +65,7 @@ export default function Nav() {
         </ul>
 
         <a
-          href="mailto:hector@exemple.fr" style={S.cta}
+          href="mailto:beaufrerehector@gmail.com" style={S.cta}
           onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-brand-500)'; e.currentTarget.style.color = 'var(--color-brand-400)' }}
           onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-gray-700)'; e.currentTarget.style.color = 'var(--color-gray-300)' }}
         >

@@ -14,7 +14,7 @@ export default function Hero() {
             fontSize: 12, fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase',
             color: 'var(--color-brand-500)', marginBottom: 40,
           }}>
-            Étudiant en communication — disponible
+            BTS Communication · CNED · Disponible
           </motion.p>
 
           {/* Name */}
@@ -28,12 +28,12 @@ export default function Hero() {
             marginBottom: 0,
           }}>
             Hector<br />
-            <span style={{ color: 'var(--color-gray-700)' }}>Beaufrere</span>
+            <span style={{ color: 'var(--color-gray-700)' }}>Beaufrère</span>
           </motion.h1>
 
           {/* Hashtags */}
           <motion.div variants={up} style={{ marginTop: 32, display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-            {['#créatif', '#curieux', '#communication', '#design', '#photo', '#storytelling', '#identité'].map((tag) => (
+            {['#sérieux', '#volontaire', '#passionné', '#minutieux', '#communication', '#créatif', '#curieux'].map((tag) => (
               <motion.span
                 key={tag}
                 whileHover={{ scale: 1.05 }}
@@ -69,14 +69,15 @@ export default function Hero() {
           }}>
             <p style={{
               fontSize: 16, lineHeight: 1.7, color: 'var(--color-gray-500)',
-              maxWidth: 380, letterSpacing: '-0.01em', fontWeight: 400,
+              maxWidth: 400, letterSpacing: '-0.01em', fontWeight: 400,
             }}>
-              Je construis mon regard créatif entre image,
-              message et identité. BTS Communication, 2024–2026.
+              Étudiant autonome et organisé, je recherche une immersion
+              professionnelle en communication. Sérieux et polyvalent,
+              prêt à m'engager dans vos projets.
             </p>
 
             <div style={{ display: 'flex', gap: 12, flexShrink: 0 }}>
-              <a href="#projects" style={{
+              <a href="#experiences" style={{
                 display: 'inline-flex', alignItems: 'center', gap: 8,
                 fontSize: 14, fontWeight: 600, letterSpacing: '-0.02em',
                 padding: '12px 24px', borderRadius: 999,
@@ -86,7 +87,7 @@ export default function Hero() {
                 onMouseEnter={e => e.currentTarget.style.opacity = '0.85'}
                 onMouseLeave={e => e.currentTarget.style.opacity = '1'}
               >
-                Mes projets
+                Mon parcours
                 <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>

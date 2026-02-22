@@ -21,10 +21,9 @@ function PhotoCard() {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      {/* Photo */}
       <img
         src="/hector/Hector.jpg"
-        alt="Hector Beaufrere"
+        alt="Hector Beaufrère"
         style={{
           width: '100%', height: '100%', display: 'block',
           objectFit: 'cover', objectPosition: 'center top',
@@ -34,14 +33,10 @@ function PhotoCard() {
           transition: 'filter 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
         }}
       />
-
-      {/* Vignette permanent */}
       <div style={{
         position: 'absolute', inset: 0, pointerEvents: 'none',
         background: 'radial-gradient(ellipse at 50% 20%, transparent 45%, rgba(10,13,18,0.65) 100%)',
       }} />
-
-      {/* Bottom gradient + info — slide on hover */}
       <div style={{
         position: 'absolute', bottom: 0, left: 0, right: 0,
         padding: '48px 20px 20px',
@@ -50,14 +45,12 @@ function PhotoCard() {
         transition: 'transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
       }}>
         <p style={{ margin: 0, fontSize: 15, fontWeight: 700, color: 'white', letterSpacing: '-0.02em' }}>
-          Hector Beaufrere
+          Hector Beaufrère
         </p>
         <p style={{ margin: '3px 0 0', fontSize: 12, color: 'rgba(255,255,255,0.45)', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
-          BTS Communication
+          BTS Communication · Poissy
         </p>
       </div>
-
-      {/* Brand dot — top right */}
       <div style={{
         position: 'absolute', top: 16, right: 16,
         width: 8, height: 8, borderRadius: '50%',
@@ -71,9 +64,9 @@ function PhotoCard() {
 }
 
 const stats = [
-  { value: '2 ans', label: 'BTS Communication' },
-  { value: '∞', label: 'idées par jour' },
-  { value: 'Paris', label: 'basé à' },
+  { value: 'Poissy', label: 'Yvelines (78)' },
+  { value: 'B2', label: 'Anglais' },
+  { value: 'Bac', label: 'Mention AB' },
 ]
 
 export default function About() {
@@ -81,7 +74,6 @@ export default function About() {
     <section id="about" style={{ padding: '128px 32px' }}>
       <div style={{ maxWidth: 1152, margin: '0 auto' }}>
 
-        {/* Section label */}
         <Reveal>
           <p style={{
             fontSize: 11, fontWeight: 600, letterSpacing: '0.14em',
@@ -94,7 +86,6 @@ export default function About() {
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 80, alignItems: 'start' }}>
 
-          {/* Text block */}
           <div>
             <Reveal delay={0.05}>
               <h2 style={{
@@ -102,27 +93,27 @@ export default function About() {
                 letterSpacing: '-0.03em', lineHeight: 1.1,
                 color: 'var(--color-gray-25)', marginBottom: 32,
               }}>
-                Un créatif qui<br />
-                <em style={{ fontStyle: 'italic', fontWeight: 300, color: 'var(--color-gray-500)' }}>cherche sa voix.</em>
+                Autonome, sérieux —{' '}
+                <em style={{ fontStyle: 'italic', fontWeight: 300, color: 'var(--color-gray-500)' }}>et passionné.</em>
               </h2>
             </Reveal>
 
             <Reveal delay={0.1}>
               <p style={{ fontSize: 16, lineHeight: 1.75, color: 'var(--color-gray-400)', marginBottom: 20, letterSpacing: '-0.01em' }}>
-                Actuellement en BTS Communication, je m'intéresse à tout ce qui
-                raconte quelque chose : une image bien cadrée, un logo qui claque,
-                un texte qui accroche.
+                Étudiant en 1ère année de BTS Communication au CNED, j'apprends
+                en autonomie et avec méthode. Je m'intéresse à tout ce qui
+                raconte quelque chose — la communication, le design, l'image.
               </p>
             </Reveal>
 
             <Reveal delay={0.15}>
               <p style={{ fontSize: 16, lineHeight: 1.75, color: 'var(--color-gray-400)', letterSpacing: '-0.01em' }}>
-                Je crois que la communication c'est avant tout de l'émotion mise en forme.
-                Curieux, un peu perfectionniste, toujours partant pour un nouveau projet.
+                Motivé par l'obtention de mon BTS, je m'engage à apporter
+                mon sérieux et ma polyvalence dans chaque projet. Curieux,
+                minutieux, avec un vrai sens de l'initiative.
               </p>
             </Reveal>
 
-            {/* Stats */}
             <Reveal delay={0.2}>
               <div style={{ marginTop: 48, display: 'flex', gap: 40, paddingTop: 40, borderTop: '1px solid var(--color-gray-800)' }}>
                 {stats.map(s => (
@@ -135,7 +126,6 @@ export default function About() {
             </Reveal>
           </div>
 
-          {/* Photo */}
           <Reveal delay={0.1}>
             <PhotoCard />
           </Reveal>
