@@ -22,7 +22,7 @@ function PhotoCard() {
       onMouseLeave={() => setHovered(false)}
     >
       <img
-        src="/hector/Hector.jpg"
+        src="/Hector.jpg"
         alt="Hector Beaufrère"
         style={{
           width: '100%', height: '100%', display: 'block',
@@ -67,20 +67,21 @@ const stats = [
   { value: 'Poissy', label: 'Yvelines (78)' },
   { value: 'B2', label: 'Anglais' },
   { value: 'Bac', label: 'Mention AB' },
+  { value: 'Permis B', label: 'Véhiculé' },
 ]
 
 export default function About() {
   return (
-    <section id="about" style={{ padding: '128px 32px' }}>
+    <section id="about" style={{ padding: '48px 32px' }}>
       <div style={{ maxWidth: 1152, margin: '0 auto' }}>
 
         <Reveal>
           <p style={{
             fontSize: 11, fontWeight: 600, letterSpacing: '0.14em',
             textTransform: 'uppercase', color: 'var(--color-gray-600)',
-            marginBottom: 64,
+            marginBottom: 36,
           }}>
-            01 — À propos
+            01 - À propos
           </p>
         </Reveal>
 
@@ -93,7 +94,7 @@ export default function About() {
                 letterSpacing: '-0.03em', lineHeight: 1.1,
                 color: 'var(--color-gray-25)', marginBottom: 32,
               }}>
-                Autonome, sérieux —{' '}
+                Autonome, sérieux -{' '}
                 <em style={{ fontStyle: 'italic', fontWeight: 300, color: 'var(--color-gray-500)' }}>et passionné.</em>
               </h2>
             </Reveal>
@@ -102,7 +103,7 @@ export default function About() {
               <p style={{ fontSize: 16, lineHeight: 1.75, color: 'var(--color-gray-400)', marginBottom: 20, letterSpacing: '-0.01em' }}>
                 Étudiant en 1ère année de BTS Communication au CNED, j'apprends
                 en autonomie et avec méthode. Je m'intéresse à tout ce qui
-                raconte quelque chose — la communication, le design, l'image.
+                raconte quelque chose - la communication, le design, l'image.
               </p>
             </Reveal>
 

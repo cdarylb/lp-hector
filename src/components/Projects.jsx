@@ -35,33 +35,33 @@ const experiences = [
     tag: 'Formation en cours',
     year: '2025–2026',
     title: 'BTS Communication',
-    company: 'CNED — à distance',
+    company: 'CNED - à distance',
     desc: 'Cursus complet en autonomie : stratégie de communication, création de contenus, identité de marque. Bac général obtenu mention Assez Bien (2024).',
   },
 ]
 
 export default function Projects() {
   return (
-    <section id="experiences" style={{ padding: '128px 32px' }}>
+    <section id="experiences" style={{ padding: '48px 32px' }}>
       <div style={{ maxWidth: 1152, margin: '0 auto' }}>
 
         <Reveal>
           <p style={{
             fontSize: 11, fontWeight: 600, letterSpacing: '0.14em',
-            textTransform: 'uppercase', color: 'var(--color-gray-600)', marginBottom: 64,
+            textTransform: 'uppercase', color: 'var(--color-gray-600)', marginBottom: 36,
           }}>
-            03 — Expériences
+            03 - Expériences
           </p>
         </Reveal>
 
         <Reveal delay={0.05}>
-          <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'flex-end', justifyContent: 'space-between', gap: 24, marginBottom: 80 }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'flex-end', justifyContent: 'space-between', gap: 24, marginBottom: 48 }}>
             <h2 style={{
               fontSize: 'clamp(32px, 4vw, 48px)', fontWeight: 800,
               letterSpacing: '-0.03em', lineHeight: 1.1,
               color: 'var(--color-gray-25)',
             }}>
-              Mon parcours —{' '}
+              Mon parcours -{' '}
               <em style={{ fontStyle: 'italic', fontWeight: 300, color: 'var(--color-gray-500)' }}>professionnel et scolaire.</em>
             </h2>
             <p style={{ fontSize: 13, color: 'var(--color-gray-600)', maxWidth: 280, lineHeight: 1.65, letterSpacing: '-0.01em' }}>
