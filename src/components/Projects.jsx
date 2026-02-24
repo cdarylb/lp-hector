@@ -42,7 +42,7 @@ const experiences = [
 
 export default function Projects() {
   return (
-    <section id="experiences" style={{ padding: '48px 32px' }}>
+    <section id="experiences" className="section-pad" style={{ padding: '48px 32px' }}>
       <div style={{ maxWidth: 1152, margin: '0 auto' }}>
 
         <Reveal>
@@ -76,6 +76,7 @@ export default function Projects() {
               <motion.div
                 whileHover={{ paddingLeft: 40 }}
                 transition={{ duration: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
+                className="exp-grid"
                 style={{
                   display: 'grid',
                   gridTemplateColumns: '48px 1fr auto',
@@ -85,7 +86,7 @@ export default function Projects() {
                   cursor: 'default', alignItems: 'start',
                 }}
               >
-                <p style={{ fontSize: 11, fontWeight: 600, color: 'var(--color-gray-700)', letterSpacing: '0.08em', paddingTop: 4 }}>
+                <p className="exp-num" style={{ fontSize: 11, fontWeight: 600, color: 'var(--color-gray-700)', letterSpacing: '0.08em', paddingTop: 4 }}>
                   {e.n}
                 </p>
 
@@ -110,7 +111,7 @@ export default function Projects() {
                   </p>
                 </div>
 
-                <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5} style={{ color: 'var(--color-gray-800)', flexShrink: 0, marginTop: 4 }}>
+                <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5} className="exp-arrow" style={{ color: 'var(--color-gray-800)', flexShrink: 0, marginTop: 4 }}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                 </svg>
               </motion.div>

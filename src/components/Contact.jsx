@@ -16,7 +16,7 @@ function Reveal({ children, delay = 0 }) {
 
 export default function Contact() {
   return (
-    <section id="contact" style={{
+    <section id="contact" className="section-pad" style={{
       padding: '48px 32px',
       borderTop: '1px solid var(--color-gray-800)',
     }}>
@@ -55,9 +55,10 @@ export default function Contact() {
             href="mailto:beaufrerehector@gmail.com"
             style={{
               display: 'inline-flex', alignItems: 'center', gap: 12,
-              fontSize: 'clamp(18px, 2.5vw, 28px)', fontWeight: 700,
+              fontSize: 'clamp(16px, 2.5vw, 28px)', fontWeight: 700,
               letterSpacing: '-0.03em', color: 'var(--color-gray-25)',
               textDecoration: 'none', transition: 'color 0.15s',
+              wordBreak: 'break-word', minWidth: 0,
             }}
             onMouseEnter={e => e.currentTarget.style.color = 'var(--color-brand-400)'}
             onMouseLeave={e => e.currentTarget.style.color = 'var(--color-gray-25)'}

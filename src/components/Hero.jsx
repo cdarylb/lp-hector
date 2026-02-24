@@ -5,7 +5,7 @@ const up = { hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition
 
 export default function Hero() {
   return (
-    <section style={{ minHeight: '100svh', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '96px 32px 64px' }}>
+    <section className="section-pad" style={{ minHeight: '100svh', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '96px 32px 64px' }}>
       <div style={{ maxWidth: 1152, margin: '0 auto', width: '100%' }}>
         <motion.div variants={stagger} initial="hidden" animate="show">
 

@@ -67,3 +67,15 @@ input[type="number"] {
 input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: none;
 }
+
+/* Responsive */
+@media (min-width: 640px) {
+    .sm-show { display: block !important; }
+}
+
+@media (max-width: 639px) {
+    .section-pad { padding-left: 16px !important; padding-right: 16px !important; }
+    .exp-grid { grid-template-columns: 1fr !important; gap: 8px !important; padding-left: 0 !important; }
+    .exp-num { display: none !important; }
+    .exp-arrow { display: none !important; }
+}

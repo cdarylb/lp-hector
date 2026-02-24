@@ -26,6 +26,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
+      className="section-pad"
       style={{
         padding: '48px 32px',
         borderTop: '1px solid var(--color-gray-800)',

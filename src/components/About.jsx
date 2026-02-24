@@ -72,7 +72,7 @@ const stats = [
 
 export default function About() {
   return (
-    <section id="about" style={{ padding: '48px 32px' }}>
+    <section id="about" className="section-pad" style={{ padding: '48px 32px' }}>
       <div style={{ maxWidth: 1152, margin: '0 auto' }}>
 
         <Reveal>
@@ -116,7 +116,7 @@ export default function About() {
             </Reveal>
 
             <Reveal delay={0.2}>
-              <div style={{ marginTop: 48, display: 'flex', gap: 40, paddingTop: 40, borderTop: '1px solid var(--color-gray-800)' }}>
+              <div style={{ marginTop: 48, display: 'flex', flexWrap: 'wrap', gap: 24, paddingTop: 40, borderTop: '1px solid var(--color-gray-800)' }}>
                 {stats.map(s => (
                   <div key={s.label}>
                     <p style={{ fontSize: 20, fontWeight: 700, letterSpacing: '-0.03em', color: 'var(--color-gray-25)' }}>{s.value}</p>
